@@ -35,7 +35,7 @@ def call(body) {
       cmdOutput = echo sh (script:"${settings.cmd}", returnStdout:true).trim()     
    }
    echo cmdOutput
-   echo '${settings.logFilePath}'
+   echo ${settings.logFilePath}
 }
 
 
