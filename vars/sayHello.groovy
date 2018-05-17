@@ -35,7 +35,7 @@ def call(body) {
       cmdOutput = echo sh (script:"${settings.cmd}", returnStdout:true).trim()     
    }
    echo cmdOutput
-   echo "the logfile is in: ${settings.logFilePath}"
+   println "the logfile is in: ${settings.logFilePath}"
 }
 
 
